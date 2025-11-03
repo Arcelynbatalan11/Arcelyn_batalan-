@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BTLN</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <h4>Hi! I'm Arcelyn Batalan</h4>
+    <h1>A Computer Science Student</h1>
+    <p class="hero-sub">
+        Building thoughtful software and elegant solutions — combining technical depth with a collaborative mindset.
+      </p>
+      <a href="Resume.pdf" class="btn"><button>Resume</button></a>
+  </section>
+
+<section id="about" class="section about-section" aria-label="About me">
+  <h2 class="about-title">About Me</h2>
+
+  <div class="about-inner container">
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="me.jpg" alt="Profile picture" />
+      </div>
+
+      <div class="about-content">
+        <p>Hello, I'm Arcelyn. I'm a Computer Science student with a passion for learning and personal growth. I enjoy software development, web design, and data analysis. I value thoughtful, maintainable solutions and working collaboratively to deliver them.</p>
+
+        <p>I come from a family of three siblings; as the eldest I've learned patience, responsibility, and the importance of setting an example. These values guide how I work with others and how I approach projects.</p>
+
+        <p>Though naturally quiet, I believe growth comes from embracing new challenges. I continually build technical skills and practice professional communication, preparing for real-world software development roles.</p>
+
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+   <section id="skills">
+    <h2 class="skills-title">Skills</h2>
+    <div class="skills-graph">
+      <div class="skill-bar" data-percent="20" style="height:20%;">
+        <span class="percent-label">20%</span>
+        <span class="skill-label">HTML</span>
+      </div>
+      <div class="skill-bar" data-percent="20" style="height:20%;">
+        <span class="percent-label">20%</span>
+        <span class="skill-label">CSS</span>
+      </div>
+      <div class="skill-bar" data-percent="35" style="height:35%;">
+        <span class="percent-label">35%</span>
+        <span class="skill-label">JavaScript</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section gallery-section page-section">
+  <h2 class="gallery-title">Gallery</h2>
+
+  <div class="gallery-inner container">
+    <div class="gallery-grid" role="list">
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Project 1">
+        <img src="picture.jpg" alt="Gallery Image 1">
+        <div class="gallery-caption">Project 1</div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Project 2">
+        <img src="Rambones.jpg" alt="Gallery Image 2">
+        <div class="gallery-caption">Project 2</div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Project 3">
+        <img src="birthday.jpg" alt="Gallery Image 3">
+        <div class="gallery-caption">Project 3</div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Project 2">
+        <img src="Places-to-visit-in-Japan.jpg" alt="Gallery Image 2">
+        <div class="gallery-caption">Project 2</div>
+      </div>
+
+ <div class="gallery-item" role="listitem" tabindex="0" aria-label="Project 4">
+        <img src="Squirrel.jpg" alt="Gallery Image 4">
+        <div class="gallery-caption">Project 4</div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Project 2">
+        <img src="BWA160414-94659.jpg" alt="Gallery Image 2">
+        <div class="gallery-caption">Project 2</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="lead">I'd love to hear from you. Whether it's a project idea, question, or just to say hello—send a message and I'll get back to you.</p>
+
+        <ul class="contact-list" aria-label="contact details">
+          <li><strong>Email:</strong> <a href="batalanarcelyn.com">batalanarcelyn@gmail.cpm</a></li>
+          <li><strong>Phone:</strong> <a href="tel:09556395642">09556395642</a></li>
+          <li><strong>Location:</strong> Balugo Valencia Neg. Or.</li>
+          <p>
+        Project Source: 
+        <a href=" https://arcelyn-batalan.github.io/Arcelyn-Batalan/" target="_blank">GitHub Repository</a>
+      </p>
+        </ul>
+
+        <div class="socials-row" aria-hidden="false">
+  <img src="Untitled43.png" alt="Facebook Logo" width="46" height="45">
+  <img src="1683192361ig-icon-black-and-white.jpg" alt="Instagram Logo" width="36" height="30">
+  <img src="email.jpg" alt="Email Logo" width="46" height="45">
+</div>
+      </div>
+
+      <div class="contact-form-wrap" aria-live="polite">
+        <form id="contactForm" class="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Full name">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="Email.com">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required placeholder="Write your message..."></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-submit">Send Message</button>
+            <button type="button" id="clearBtn" class="btn-clear">Clear</button>
+          </div>
+
+          <div id="formFeedback" class="form-feedback" role="status" aria-atomic="true" hidden>
+            <p class="feedback-text"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <p class="copyright">© 2025 Lawrence Euneil S. Caguioa. All rights reserved.</p>
+
+    </div>
+     <div class="footer-nav">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Skills</a>
+          <a href="#">Gallery</a>
+          <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
